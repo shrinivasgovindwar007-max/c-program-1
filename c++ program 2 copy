@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A[5], B[5];
+
+    cout << "Enter 5 elements of the array: ";
+    for (int i = 0; i < 5; i++) {
+        cin >> A[i];
+    }
+
+    // Copy elements from A to B
+    for (int i = 0; i < 5; i++) {
+        B[i] = A[i];
+    }
+
+    cout << "Elements of first array: ";
+    for (int i = 0; i < 5; i++) {
+        cout << A[i] << " ";
+    }
+
+    cout << "\nElements of copied array: ";
+    for (int i = 0; i < 5; i++) {
+        cout << B[i] << " ";
+    }
+
+    return 0;
+}
